@@ -58,7 +58,7 @@ body{
 .hero{
     height:100vh;
     
-    background:url("../assests/images/hero-bg.png");
+    background:url("../assets/images/hero-bg.png");
 
 
     background-size:cover;
@@ -171,39 +171,106 @@ gap:30px;
 }
 
 .card{
-background:#1e293b;
-padding:30px;
-border-radius:15px;
-transition:.3s;
+
+    background:#1e293b;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    border:1px solid rgba(6,182,212,.15);
+
+    transition:all .35s ease;
+
+    overflow:hidden;
+
 }
 
 .card:hover{
-transform:translateY(-10px);
+
+    transform:translateY(-10px);
+
+    border-color:#06b6d4;
+
+    box-shadow:0 15px 35px rgba(6,182,212,.20);
+
 }
 
 .card img{
-width:100%;
-border-radius:10px;
-margin-bottom:15px;
+
+    width:100%;
+
+    border-radius:12px;
+
+    margin-bottom:18px;
+
+    transition:.4s ease;
+
 }
 
-.skills{
-display:flex;
-flex-wrap:wrap;
-gap:15px;
-justify-content:center;
-}
+.card:hover img{
 
-.skills span{
-background:#1e293b;
-padding:12px 20px;
-border-radius:30px;
-}
+    transform:scale(1.05);
 
+}
 footer{
 text-align:center;
 padding:30px;
 background:#111827;
+}
+
+/* ============================
+   Skills Section
+============================ */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.skill-category{
+    background:#1e293b;
+    border-radius:18px;
+    padding:25px;
+    transition:0.3s;
+    border:1px solid rgba(6,182,212,.2);
+}
+
+.skill-category:hover{
+    transform:translateY(-8px);
+    border-color:#06b6d4;
+    box-shadow:0 10px 30px rgba(6,182,212,.15);
+}
+
+.skill-category h3{
+    color:#06b6d4;
+    margin-bottom:18px;
+    font-size:22px;
+    text-align:center;
+}
+
+.skill-items{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    justify-content:center;
+}
+
+.skill-items span{
+    background:#0f172a;
+    color:white;
+    padding:10px 18px;
+    border-radius:30px;
+    font-size:14px;
+    transition:.3s;
+}
+
+.skill-items span:hover{
+    background:#06b6d4;
+    color:#fff;
+    transform:scale(1.05);
 }
 
 /* =====================================
@@ -539,6 +606,93 @@ RESPONSIVE
 }
  
 }
+
+
+/* =====================================
+PROJECT TECH STACK
+===================================== */
+
+.tech-title{
+
+    color:#06b6d4;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    margin-top:18px;
+
+    margin-bottom:15px;
+
+}
+
+/* Project Tech Stack */
+
+.project-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:15px;
+
+}
+
+.project-tags span{
+
+    background:rgba(6,182,212,.12);
+
+    color:#06b6d4;
+
+    border:1px solid #06b6d4;
+
+    border-radius:25px;
+
+    padding:8px 16px;
+
+    font-size:13px;
+
+    font-weight:500;
+
+    transition:all .3s ease;
+
+}
+
+.project-tags span:hover{
+
+    background:#06b6d4;
+
+    color:#ffffff;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 18px rgba(6,182,212,.45);
+
+}
+
+
+.card h3{
+
+    color:#ffffff;
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+    margin-bottom:18px;
+
+}
+
 
 .project-links{
 margin-top:25px;
